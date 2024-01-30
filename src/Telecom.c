@@ -4,6 +4,10 @@
 
 #include "Telecom.h"
 
+const char *planName[5] = {"Basic Plan", "General Plan", "Regular Plan", "Advanced Plan", "Premium Plan"};
+CustInfo *Head = NULL;
+unsigned int IDref = 0;
+
 int main(void) {
     char entity;
     int choice;

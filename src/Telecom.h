@@ -82,6 +82,6 @@ void flushBuffer(void);
 unsigned int newacc_login(char entity);
 void coreInit(void);
 
-const char *planName[5] = {"Basic Plan", "General Plan", "Regular Plan", "Advanced Plan", "Premium Plan"};
-CustInfo *Head = NULL;
-unsigned int IDref = 0;
+extern CustInfo *Head;
+extern const char *planName[5];
+extern unsigned int IDref;

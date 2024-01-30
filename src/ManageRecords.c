@@ -42,10 +42,10 @@ unsigned int selectPlan(CustInfo *node) {
  * CHANGE ADDRESS OF CUSTOMER
 *******************************************************/
 void changeDetails(CustInfo *node) {
-	char *addr = (char *)allocMemory(320), *temp = NULL;
+	char *addr = (char *)allocMemory(320);//, *temp = NULL;
     printf("Enter new address: \n\t");
     fscanf(stdin, "%s", addr);
-    temp = node->addr;
+    //temp = node->addr;
     //free(temp);
     node->addr = addr;
     printf("New Address updated\n");
